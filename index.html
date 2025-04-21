@@ -49,11 +49,44 @@
     .status-concluido { background-color: #d4edda; }
     .status-andamento { background-color: #fff3cd; }
     .status-naoiniciado { background-color: #f8d7da; }
+    .grafico-container {
+      margin-top: 40px;
+    }
+    .grafico-horizontal {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      margin-top: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .grafico-horizontal div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #fff;
+    }
+    .grafico-horizontal .concluido {
+      width: 11.11%;
+      background-color: #28a745;
+    }
+    .grafico-horizontal .andamento {
+      width: 11.11%;
+      background-color: #ffc107;
+      color: #000;
+    }
+    .grafico-horizontal .naoiniciado {
+      width: 77.78%;
+      background-color: #dc3545;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo-medianeira.png" alt="Logo da Prefeitura de Medianeira">
+    <img src="./logo-medianeira.png" alt="Logo da Prefeitura de Medianeira">
     <h1>Programa de Compliance Público da Prefeitura de Medianeira</h1>
   </header>
   <main>
@@ -123,6 +156,15 @@
         <td>Não iniciado</td>
       </tr>
     </table>
+
+    <div class="grafico-container">
+      <h2>Gráfico de Execução do Programa (Fases 1 a 9)</h2>
+      <div class="grafico-horizontal">
+        <div class="concluido">Fase 1</div>
+        <div class="andamento">Fase 2</div>
+        <div class="naoiniciado">Fases 3 a 9</div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
